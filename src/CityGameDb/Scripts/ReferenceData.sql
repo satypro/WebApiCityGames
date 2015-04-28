@@ -1,0 +1,6 @@
+﻿IF NOT EXISTS(SELECT * FROM dbo.Status where Name = 'Not Started')
+  INSERT INTO dbo.Status(Name,Ordinal) Values('Not Started', 0)
+IF NOT EXISTS(SELECT * FROM dbo.Status where Name = 'In Progress')
+  INSERT INTO dbo.Status(Name,Ordinal) Values('In Progress', 1)
+IF NOT EXISTS(SELECT * FROM dbo.Status where Name = 'Completed')
+  INSERT INTO dbo.Status(Name,Ordinal) Values('Completed', 2)
