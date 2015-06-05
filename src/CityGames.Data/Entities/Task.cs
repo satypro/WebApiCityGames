@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityGames.Data.Entities
 {
-    public class Task
+    public class Task : IVersionedEntity
     {
         private readonly IList<User> _users = new List<User>();
 
