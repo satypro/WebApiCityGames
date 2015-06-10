@@ -12,6 +12,8 @@ using CityGames.Data.SqlServer.mapping;
 using NHibernate;
 using Ninject.Activation;
 using NHibernate.Context;
+using Ninject.Web.Common;
+using CityGames.Web.Common;
 
 namespace CityGames.Web.Api.App_Start
 {
@@ -44,6 +46,8 @@ namespace CityGames.Web.Api.App_Start
                                                      .Mappings(m => m.FluentMappings.AddFromAssemblyOf<TaskMap>())
                                                      .BuildSessionFactory();
             container.Bind<ISessionFactory>().ToConstant(sessionFactory);
+            container.Bind<ISession>().ToMethod(CreateSession).InRequestScope();
+            container.Bind<IActionTransactionHelper>().To<ActionTransactionHelper>().InRequestScope();
 
         }
 
