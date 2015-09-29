@@ -13,7 +13,7 @@ namespace CityGames.Web.Api.Controllers.V2
     [RoutePrefix("api/{apiVersion:apiVersionConstraint(v2)}/tasks")]
     public class TasksController : ApiController
     {
-        [Route("", Name="AddTaskRouteV2")]
+        [Route("addTasks", Name="AddTaskRouteV2")]
         [HttpPost]
         public Task AddTask(HttpRequestMessage requestMessage, Models.Task newTask) {
 
@@ -23,6 +23,19 @@ namespace CityGames.Web.Api.Controllers.V2
                 Subject = "In V2, newtask.Subject = " + newTask.Subject
             };
         
+        }
+
+        [Route("demo", Name = "CheckTaskRouteV2")]
+        [HttpPost]
+        public Task AddTask()
+        {
+
+            return new Task
+            {
+
+                Subject = "In V2, newtask.Subject = "
+            };
+
         }
     }
 }

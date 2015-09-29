@@ -31,6 +31,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CityGameDb", "CityGameDb\Ci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityGames.Web.Api", "CityGames.Web.Api\CityGames.Web.Api.csproj", "{54273D3E-58F6-448B-9652-4840B23EF3FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityGames.Web.Api.Security", "CityGames.Web.Api.Security\CityGames.Web.Api.Security.csproj", "{EC33A678-D1F8-46AF-A0E6-145CD472249F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{54273D3E-58F6-448B-9652-4840B23EF3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54273D3E-58F6-448B-9652-4840B23EF3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54273D3E-58F6-448B-9652-4840B23EF3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC33A678-D1F8-46AF-A0E6-145CD472249F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC33A678-D1F8-46AF-A0E6-145CD472249F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC33A678-D1F8-46AF-A0E6-145CD472249F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC33A678-D1F8-46AF-A0E6-145CD472249F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,7 @@ namespace CityGames.Web.Api
     {
         public static void Register(HttpConfiguration config)
         {
-           // config.MapHttpAttributeRoutes();
+           //config.MapHttpAttributeRoutes();
 
             var constraintResolver = new DefaultInlineConstraintResolver();
             constraintResolver.ConstraintMap.Add("apiVersionConstraint", typeof(ApiVersionConstraint));
